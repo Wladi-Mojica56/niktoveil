@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/niktoveil/',
+  base: process.env.NODE_ENV === 'production' ? '/niktoveil/' : '/',
+  
   build: {
-    // Para GitHub Pages con "Deploy from a branch" usando /docs en master.
     outDir: 'docs',
+    sourcemap: false,
   },
+  
   server: {
     host: '0.0.0.0',
     port: 5173,
