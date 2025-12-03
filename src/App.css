@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+
+html, body, #root {
+	height: 100%;
+}
+
+html {
+	transition: background-color 300ms ease, color 300ms ease;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-body, 'Inter', sans-serif);
+	color: var(--text-primary);
+	background-color: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 300ms ease, color 300ms ease;
+}
+
+#root {
+	background-color: var(--color-bg);
+}
+
+/* Heading utility: use Playfair Display for headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display, 'Playfair Display', serif);
+	font-weight: 700;
+	margin: 0 0 0.5rem 0;
+	color: var(--text-primary);
+}
+
+p, li, a, span {
+	font-family: var(--font-body, 'Inter', sans-serif);
+	font-weight: 400;
+	color: var(--text-primary);
+}
+
+/* Ensure links have proper visibility in both themes */
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: color 300ms ease;
+}
+
+a:hover {
+	color: var(--accent-purple);
+}
+
+/* Small helpers */
+.text-accent { 
+	color: var(--accent-color); 
+}
+
+@media (max-width: 768px) {
+	:root { font-size: 14px; }
+}
