@@ -11,7 +11,7 @@ async function main() {
   try {
     await access(indexPath)
   } catch {
-    console.error('No se encontró docs/index.html. Ejecuta "npm run build" antes de crear el 404.')
+    console.error('No se encontro docs/index.html. Ejecuta "npm run build" antes de crear el 404.')
     process.exit(1)
   }
 
