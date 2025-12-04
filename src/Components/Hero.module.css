@@ -5,7 +5,6 @@
   padding: 88px 40px;
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,250,255,0.98));
   transition: background 300ms ease, color 300ms ease;
-  box-sizing: border-box;
 }
 
 html[data-theme="dark"] .hero {
@@ -179,7 +178,6 @@ html[data-theme="dark"] .heroBadge {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  group: 1;
   transition: transform 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -312,39 +310,6 @@ html[data-theme="dark"] .heroBadge {
 }
 
 /* Responsive Design */
-@media (max-width: 1080px) {
-  .hero {
-    padding: 72px 28px;
-  }
-
-  .heroContainer {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .heroContent {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .heroSubtitle {
-    max-width: 100%;
-  }
-
-  .heroButtons {
-    flex-wrap: wrap;
-  }
-
-  .heroButtonPrimary,
-  .heroButtonSecondary {
-    flex: 1 1 auto;
-  }
-
-  .heroAside {
-    display: none;
-  }
-}
-
 @media (max-width: 1024px) {
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -359,45 +324,6 @@ html[data-theme="dark"] .heroBadge {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 64px 22px 56px;
-  }
-
-  .heroContainer {
-    align-items: center;
-  }
-
-  .heroContent {
-    text-align: center;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .heroTitle {
-    font-size: clamp(1.8rem, 6vw, 2.8rem);
-    line-height: 1.1;
-  }
-
-  .heroSubtitle {
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .heroButtons {
-    width: 100%;
-    gap: 12px;
-    justify-content: center;
-  }
-
-  .heroButtonPrimary,
-  .heroButtonSecondary {
-    width: 100%;
-    max-width: 420px;
-    justify-content: center;
-    text-align: center;
-    white-space: normal;
-  }
-
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
@@ -429,27 +355,6 @@ html[data-theme="dark"] .heroBadge {
 }
 
 @media (max-width: 480px) {
-  .hero {
-    padding: 56px 18px 48px;
-  }
-
-  .heroTitle {
-    font-size: clamp(1.6rem, 8vw, 2.3rem);
-  }
-
-  .heroSubtitle {
-    font-size: 15px;
-  }
-
-  .heroButtons {
-    gap: 10px;
-  }
-
-  .heroButtonPrimary,
-  .heroButtonSecondary {
-    max-width: none;
-  }
-
   .projectsGrid {
     grid-template-columns: 1fr;
     gap: 16px;
