@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Hero.module.css'
 import writer from '../assets/imgs/writer.png'
@@ -41,7 +41,7 @@ function Hero() {
                     </h1>
 
                     <p className={styles.heroSubtitle}>
-                        Desarrollamos plataformas web de alto rendimiento, con diseño impecable, automatizaciones inteligentes y análisis de seguridad integrados. Tecnología, estética y precisión como un solo lenguaje.
+                        Desarrollamos plataformas web de alto rendimiento, con diseno impecable, automatizaciones inteligentes y analisis de seguridad integrados. Tecnologia, estetica y precision como un solo lenguaje.
                     </p>
 
                     <div className={styles.heroButtons}>
@@ -87,3 +87,5 @@ function Hero() {
 }
 
 export default Hero;
+
+
